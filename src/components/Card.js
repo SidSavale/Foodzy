@@ -1,12 +1,12 @@
 import React from 'react'
 
 export const Card = (props) => {
-  const {image, title} =props;
-  
+  const {img, title} = props;
+
   return (
-    <div className='bg-white text-center rounded p-3 shadow border border-muted'>
-        <img  src={image} loading='lazy'alt='quizine for a country' className='img-fluid img-responsive rounded'/>
+    <div className='p-3 border text-center border-muted shadow rounded bg-white'>
+        <img src={img} alt='card' loading='lazy' className='img-fluid img-responsive rounded' />
         <h3>{title}</h3>
-         </div>
+    </div>
   )
 }
